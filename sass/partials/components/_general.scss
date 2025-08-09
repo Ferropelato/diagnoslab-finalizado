@@ -1,0 +1,46 @@
+html, body { height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1rem 0; 
+}
+
+.footer-diag {
+  margin-top: 0;
+}
+
+.proximamente-wrap {
+  background: linear-gradient(135deg, #f7faff, #eaf2ff);
+  border: 1px solid #dfe7ff;
+  box-shadow: 0 6px 20px rgba(13,110,253,.08);
+}
+
+.proximamente-badge {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: .8px;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #0d6efd;
+  box-shadow: 0 0 18px rgba(13,110,253,.35);
+  animation: blink 1.4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 0 rgba(13,110,253,0)); }
+  50%      { opacity: .45; filter: drop-shadow(0 0 10px rgba(13,110,253,.5)); }
+}
+

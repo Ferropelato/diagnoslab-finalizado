@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Creá tu cuenta en DiagnosLab y suscribite para recibir novedades y resultados a tiempo.">
+  <meta name="author" content="DiagnosLab">
+  <title>Registro & Suscripción - DiagnosLab</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+          <span class="fw-semibold">DiagnosLab</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDiag"
+          aria-controls="navbarDiag" aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDiag">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link active" href="registro.html">Registro</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="text-white text-center py-5"
+      style="background: linear-gradient(270deg, #4dabf7, #0d6efd, #004085); background-size: 600% 600%; animation: heroGradient 15s ease infinite;">
+      <div class="container">
+        <h1 class="display-6 fw-bold mb-2">Registro & Suscripción</h1>
+        <p class="mb-0">Creá tu cuenta y recibí novedades y recordatorios</p>
+      </div>
+    </header>
+    <main class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="p-4 border rounded shadow-sm bg-light">
+              <h2 class="h4 mb-3">Crear cuenta</h2>
+              <form action="#" method="post" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Tu apellido"
+                      required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com"
+                      required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+54 9 ..."
+                      required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-control"
+                      placeholder="Mínimo 8 caracteres" minlength="8" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password2" class="form-label">Repetir contraseña</label>
+                    <input type="password" id="password2" name="password2" class="form-control"
+                      placeholder="Repetí tu contraseña" minlength="8" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="direccion" class="form-label">Dirección (opcional)</label>
+                    <input type="text" id="direccion" name="direccion" class="form-control"
+                      placeholder="Calle, número, ciudad">
+                  </div>
+                </div>
+
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" value="1" id="terminos" required>
+                  <label class="form-check-label" for="terminos">
+                    Acepto los <a href="#" target="_blank">términos y condiciones</a>.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 mt-3">
+                  <i class="bi bi-person-plus me-1"></i> Crear cuenta
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="p-4 border rounded shadow-sm bg-light h-100 d-flex flex-column">
+              <h2 class="h5 mb-3">Suscribite al newsletter</h2>
+              <p>Recibí novedades, recordatorios y recomendaciones de estudios. Podés cancelarlo cuando quieras.</p>
+              <form action="#" method="post" class="mt-2">
+                <div class="mb-3">
+                  <label for="emailSus" class="form-label">Correo electrónico</label>
+                  <input type="email" id="emailSus" name="emailSus" class="form-control" placeholder="tu@email.com"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="frecuencia" class="form-label">Frecuencia</label>
+                  <select id="frecuencia" name="frecuencia" class="form-select" required>
+                    <option value="" selected disabled>Elegir...</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="quincenal">Quincenal</option>
+                    <option value="mensual">Mensual</option>
+                  </select>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="1" id="consent">
+                  <label class="form-check-label" for="consent">
+                    Acepto recibir comunicaciones de DiagnosLab.
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-outline-primary w-100">
+                  <i class="bi bi-envelope-paper me-1"></i> Suscribirme
+                </button>
+              </form>
+
+              <hr class="my-4">
+
+              <h6 class="mb-2">Ventajas</h6>
+              <ul class="mb-0">
+                <li>Recordatorios de controles de rutina</li>
+                <li>Promociones y campañas de prevención</li>
+                <li>Novedades de servicios y horarios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div class="p-4 border rounded shadow-sm bg-white">
+            <h2 class="h5 mb-3">¿Necesitás ayuda?</h2>
+            <p class="mb-1">📧 <a href="mailto:soporte@diagnoslab.com">soporte@diagnoslab.com</a></p>
+            <p class="mb-0">📞 <a href="tel:+5493511234567">+54 9 351 123 4567</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-diag text-white text-center py-4"
+      style="background: linear-gradient(270deg, #4dabf7, #0d6efd);">
+      <div class="container">
+        <p class="mb-0">© 2025 DiagnosLab - Todos los derechos reservados. by Fer Ropelato</p>
+        <div class="mt-2">
+          <a href="https:www.facebook.com" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https:www.instagram.com" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https:www.whatsapp.com" class="text-white"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const formRegistro = document.querySelector('form[action="#"]:not(:has(#emailSus))');
+    if (formRegistro) {
+      formRegistro.addEventListener('submit', (e) => {
+        const pass = document.getElementById('password');
+        const pass2 = document.getElementById('password2');
+        if (pass.value !== pass2.value) {
+          e.preventDefault();
+          alert('Las contraseñas no coinciden.');
+          pass2.focus();
+        }
+      });
+    }
+  </script>
+
+  <style>
+    @keyframes heroGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</body>
+
+</html>
